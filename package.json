@@ -24,8 +24,5 @@
   "homepage": "https://github.com/JEC6789/Poke-Fight#readme",
   "devDependencies": {
     "concurrently": "^7.2.2"
-  },
-  "dependencies": {
-    "bcrypt": "^5.0.1"
   }
 }
