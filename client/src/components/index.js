@@ -9,3 +9,4 @@ export * from './BattleMenu';
 export * from './PlayerSummary';
 export * from './BattleAnnouncer';
 export * from './SelectionScreen';
+export * from './OpponentSelection';

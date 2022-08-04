@@ -77,7 +77,7 @@ export const useBattleSequence = sequence => {
 
           (async () => {
             setInSequence(true);
-            setAnnouncerMessage(`${attacker.name} has cast a spell!`);
+            setAnnouncerMessage(`${attacker.name} is using a special attack!`);
             await wait(1000);
 
             turn === 0

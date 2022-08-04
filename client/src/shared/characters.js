@@ -11,7 +11,7 @@ export const playerStats = {
 };
 export const opponentStats = {
   level: 50,
-  name: 'Opponent',
+  name: '',
   maxHealth: 100,
   img: '',
 

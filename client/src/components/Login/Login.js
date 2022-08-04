@@ -74,7 +74,7 @@ export const Login = (props) => {
             </Link>
             {error && <div>Login failed</div>}
 
-            <Link to="/select">
+            <Link to="/select ">
               <button className={styles.startButton}>
                 Character Selection!
               </button>

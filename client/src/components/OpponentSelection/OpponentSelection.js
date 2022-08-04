@@ -3,8 +3,8 @@ import styles from './styles.module.css';
 import {useState} from "react"; 
 import axios from 'axios';
 import { Battle } from 'components';
-import { playerStats } from 'shared';
-export const SelectionScreen = ({characterClick}) => {
+import { opponentStats } from 'shared';
+export const OpponentSelection = ({opponentClick}) => {
 
 const [pokemonName, SetPokemonName] = useState("")
 const [pokemonChosen, setPokemonChosen] = useState(false);
@@ -26,11 +26,11 @@ const searchPokemon = () => {
       defense: respone.data.stats[2].base_stat,
       });
       setPokemonChosen(true);
-      playerStats.name = pokemonName;
-      playerStats.img = respone.data.sprites.front_default;
-      playerStats.maxHealth = respone.data.stats[0].base_stat;
-      playerStats.attack = respone.data.stats[1].base_stat;
-      playerStats.defense = respone.data.stats[2].base_stat;
+      opponentStats.name = pokemonName;
+      opponentStats.img = respone.data.sprites.front_default;
+      opponentStats.maxHealth = respone.data.stats[0].base_stat;
+      opponentStats.attack = respone.data.stats[1].base_stat;
+      opponentStats.defense = respone.data.stats[2].base_stat;
    }  
   );
 };
@@ -59,9 +59,11 @@ const searchPokemon = () => {
   </>
   )}
 
-<Link to="/opponent ">
+
+
+<Link to="/battle ">
               <button className={styles.startButton}>
-                OpponentSelection!
+                Battle!!!
               </button>
             </Link>
 

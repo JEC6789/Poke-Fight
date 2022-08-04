@@ -6,7 +6,7 @@ export const BattleMenu = ({ onAttack, onMagic, onHeal }) => (
       Attack
     </div>
     <div onClick={onMagic} className={styles.option}>
-      Magic
+      Special Attack
     </div>
     <div onClick={onHeal} className={styles.option}>
       Heal

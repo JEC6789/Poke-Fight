@@ -1,0 +1,61 @@
+.main {
+    height: 100vh;
+    display: flex;
+    align-items:flex-start
+  }
+  .startButton {
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FFCB05;
+    box-shadow: 0px 0px 3px gray;
+    
+  }
+    
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+    
+    .title {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    height: 250px;
+    color: #FFCB05;
+    text-shadow: 2px 2px #003A70;
+    flex-direction: column;
+    }
+    
+    .title input{
+      width: 200px;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid #003A70;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    
+    .title button {
+      border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FFCB05;
+    box-shadow: 0px 0px 3px gray;
+    margin-top: 5px;
+    }
+    .title button:hover {
+      cursor: pointer;
+    }
+    
+    .DisplaySection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
