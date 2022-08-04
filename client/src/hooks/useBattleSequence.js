@@ -121,7 +121,7 @@ export const useBattleSequence = sequence => {
 
           (async () => {
             setInSequence(true);
-            setAnnouncerMessage(`${attacker.name} has chosen to heal!`);
+            setAnnouncerMessage(`${attacker.name} is using a healing potion!`);
             await wait(1000);
 
             turn === 0
