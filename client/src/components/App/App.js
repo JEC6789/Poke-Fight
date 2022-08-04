@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
-import { Battle, EndMenu, HomePage, SelectionScreen, Login, Signup } from 'components';
+import { Battle, EndMenu, HomePage, StartMenu, SelectionScreen, Login, Signup } from 'components';
 
 const httpLink = createHttpLink({
   uri: "/graphql"

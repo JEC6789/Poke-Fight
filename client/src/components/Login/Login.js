@@ -73,6 +73,12 @@ export const Login = (props) => {
               </button>
             </Link>
             {error && <div>Login failed</div>}
+
+            <Link to="/select">
+              <button className={styles.startButton}>
+                Character Selection!
+              </button>
+            </Link>
         </main>
     );
 };
