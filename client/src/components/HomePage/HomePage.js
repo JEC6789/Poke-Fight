@@ -14,9 +14,11 @@ export const HomePage = ({ battleClick, onStartClick }) => {
         {Auth.loggedIn() ? (
           <>
             <a href="/" onClick={logout}>Logout</a>
-            <button className={styles.startButton} onClick={battleClick}>
-              Character Selection!
-            </button>
+            <Link to="/select">
+              <button className={styles.startButton} onClick={battleClick}>
+                Character Selection!
+              </button>
+            </Link>
           </>
         ) : (
           <>

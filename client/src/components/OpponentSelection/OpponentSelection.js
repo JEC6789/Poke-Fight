@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styles from './styles.module.css';
 import {useState} from "react"; 
 import axios from 'axios';
-import { Battle } from 'components';
 import { opponentStats } from 'shared';
 export const OpponentSelection = ({opponentClick}) => {
 
@@ -61,7 +60,7 @@ const searchPokemon = () => {
 
 
 
-<Link to="/battle ">
+<Link to="/battle">
               <button className={styles.startButton}>
                 Battle!!!
               </button>

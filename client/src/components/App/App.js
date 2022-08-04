@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
-import { Battle, EndMenu, HomePage, StartMenu, SelectionScreen, Login, Signup, OpponentSelection } from 'components';
+import { Battle, EndMenu, HomePage, SelectionScreen, Login, Signup, OpponentSelection } from 'components';
 
 
 const httpLink = createHttpLink({
@@ -47,8 +47,18 @@ export const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/select" element={<SelectionScreen />} />
             <Route path="/opponent" element={<OpponentSelection />} />
-            <Route path="/battle" element={<Battle />} />
-            
+            <Route path="/battle" element={
+              mode !== "gameOver" ? (
+                <Battle
+                  onGameEnd={winner => {
+                    setWinner(winner);
+                    setMode('gameOver');
+                  }}
+                />
+              ) : (mode === "gameOver" && !!winner && (
+                <EndMenu winner={winner} onStartClick={() => setMode('battle')} />
+              ))
+            } />
           </Routes>
         </div>
       </Router>
