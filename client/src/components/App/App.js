@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
 import { Battle, EndMenu, HomePage, StartMenu, SelectionScreen, Login, Signup, OpponentSelection } from 'components';
 
+
 const httpLink = createHttpLink({
   uri: "/graphql"
 });
@@ -47,6 +48,7 @@ export const App = () => {
             <Route path="/select" element={<SelectionScreen />} />
             <Route path="/opponent" element={<OpponentSelection />} />
             <Route path="/battle" element={<Battle />} />
+            
           </Routes>
         </div>
       </Router>

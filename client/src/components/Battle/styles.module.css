@@ -10,18 +10,18 @@
   box-sizing: border-box;
 }
 .hud {
-  gap: 25px;
+  gap: 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .hudChild {
   flex: 1;
-  height: 200px;
+  height: 180px;
 }
 .gameHeader {
-  font-size: 48px;
-  color: #fdac00;
+  font-size: 35px;
+  color: #feb313;
   text-shadow: 0px 0px 5px #7f0000;
   font-family: 'Press Start 2P', cursive;
 }
@@ -41,7 +41,7 @@
 .gameImages {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
